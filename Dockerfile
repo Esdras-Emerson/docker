@@ -1,6 +1,5 @@
 FROM python:3.12.4 
-RUN pip install poetry #o gerenciador que utilizei
-COPY . /src 
+RUN pip install poetry 
 WORKDIR /src
 RUN poetry install 
 EXPOSE 8501 
